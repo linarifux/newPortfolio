@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.header{
+    background-color: #dcdde1;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    align-items: center;
+}
+.navbar > img{
+    cursor: pointer;
+    height: 30px;
+}
+.navbar > ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar > ul > li a{
+    font-size: 16px;
+    padding: 11px 35px;
+    margin: 0 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.navbar > ul > li a:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+
+/* Hero Section */
+
+.hero-sec{
+    background: #535c68; 
+}
+.my-hero{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 100px 50px;
+    align-items: center;
+}
+.my-hero > p{
+    color: white;
+    font-family: 'Poppins';
+    font-size: 20px;
+    
+}
+
+.primary-btn{
+    font-size: 16px;
+    padding: 11px 35px;
+    margin: 0 15px;
+    font-weight: 700;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    margin-left: 200px;
+    cursor: pointer;
+}
+.primary-btn:hover{
+    background: #000;
+    color: white;
+    transition: 0.5s; 
+}
+
+
+/* About Section */
+
+.about-sec{
+    margin-top: 80px;
+}
+.about-sec > h1{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+}
+.about img{
+    height: 500px;
+    width: 700px;
+}
+
+.about > .text{
+    margin-left: 200px;
+}
+.about > .text > h2{
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.about > .text > .primary-btn{
+    margin-top: 30px;
+    background: white;
+    margin-left: 0;
+}
+.about > .text > .primary-btn:hover{
+    background: #000;
+    color: white;
+    transition: 0.5s; 
+}
+
+/* Project Section */
+
+.project-sec{
+    margin-top: 80px;
+}
+
+.project-sec > h1{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project img {
+    height: 200px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.project img:hover{
+    height: 250px;
+    width: 350px;
+    transition: 0.5s ease-in-out;
+}
+
+.left,.right,.middle{
+    background: #dcdde1;
+    text-align: center;
+}
+
+.project p{
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Contact Section */
+
+.contact-sec{
+    margin-top: 80px;
+}
+.contact-sec > h1{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.contact-sec .contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-sec .contact > p{
+    font-size: 20px;
+}
+
+.message-area{
+    margin: 0px 200px;
+}
+.message-area input{
+    width: 500px; 
+    padding: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.message-area textarea{
+    width: 500px; 
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.message-area label{
+    display: block;
+    margin: 5px 0;
+}
+
+.primary-btn{
+    font-size: 16px;
+    padding: 11px 35px;
+    margin: 0 15px;
+    font-weight: 700;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    margin-left: 200px;
+    cursor: pointer;
+}
+.message-area button{
+    margin-top: 10px;
+}
+
+/* Footer Section */
+
+.footer-sec{
+    margin-top: 80px;
+    background-color: #dcdde1;
+    padding: 10px 0;
+    align-items: center;
+    text-align: center;
+}
+
+.footer{
+    font-size: 30px;
+    font-weight: 300;
+}
