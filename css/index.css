@@ -83,6 +83,7 @@ ul{
     text-transform: uppercase;
     margin-left: 200px;
     cursor: pointer;
+    outline: none;
 }
 .primary-btn:hover{
     background: #000;
@@ -244,3 +245,109 @@ ul{
     font-size: 30px;
     font-weight: 300;
 }
+
+@media only screen and (max-width: 1500px) {
+    .my-hero{
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        padding: 100px 50px;
+        align-items: center;
+    }
+    .my-hero > input{
+        text-align: center;
+    }
+    .my-hero > p{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .about img{
+        height: 300px;
+        max-width: 500px;
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .container{
+        width: 90%;
+    }
+    .my-hero{
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 30px 0;
+    }
+    .primary-btn{
+        font-size: 16px;
+        padding: 11px 35px;
+        margin: 0 15px;
+        font-weight: 700;
+        border: 1px solid #000;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-left: 0;
+    }
+    
+    .my-hero > p{
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .about{
+        display: block; 
+    }
+    .about-sec > h1{
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+    .about img{
+        height: 300px;
+        width: 100%
+    }
+    
+    .about > .text{
+        margin: 0;
+    }
+    .about > .text > h2{
+        font-weight: 300;
+        font-size: 25px;
+    }
+    .about > .text {
+        text-align: center;
+    }
+    .about > .text > p, .about > .text > h2{
+        text-align: left;
+    }
+
+    .project-sec > h1{
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+    .project{
+        display: block;
+        align-items: center;
+    }
+    
+    .project img {
+        height: 200px;
+        width: 100%;
+        cursor: pointer;
+    }
+    .project img:hover {
+        height: 200px;
+        width: 100%;
+        cursor: pointer;
+    }
+    .project p{
+        font-size: 25px;
+        font-weight: 700;
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+
+    .contact-sec > h1{
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+  }
