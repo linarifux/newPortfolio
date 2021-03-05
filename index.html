@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio::Arif</title>
     <link rel="stylesheet" href="./css/index.css" class="css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" class="css">
 </head>
 
 <body>
@@ -14,19 +15,22 @@
         <div class="container">
             <div class="navbar">
                 <img src="https://img.icons8.com/ios/72/code.png" alt="">
-                <ul>
+                <ul class="ul-pc" id="ul-pc">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+                <i class="fas fa-bars" id="bars" onclick="myFunction()"></i>
+
+
             </div>
         </div>
     </div>
     <div class="hero-sec">
         <div class="container">
             <div class="my-hero">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptate, earum hic quibusdam veritatis quisquam quaerat quo, necessitatibus temporibus, distinctio sapiente quod? Expedita quaerat, asperiores accusantium deleniti nobis reprehenderit quibusdam.</p>
+                <p>I must say your wait is over. You have come to the right place at last. Web programming is my passion as well as profession. I use Javascript in the Backend. You must heard the name Node.js. I use React.js in the Front-end. So, lets get started.</p>
             
             <input type="submit" value="Learn More" class="primary-btn">
             </div>
@@ -39,7 +43,7 @@
                 <img src="./images/computer-303129_1280.png" alt="">
                 <div class="text">
                     <h2>Hi, I am <span>Naimul Islam Arif</span></h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat ipsum magnam repudiandae id maxime temporibus, impedit iusto aut, accusantium mollitia ex tenetur enim ipsa optio animi asperiores, cupiditate tempora praesentium!</p>
+                    <p>I have been coding for the past 6 years. As a CS student I have built more than 30 projects and most of them are web based. I started my programming career by participating in Programming Contest. I have solved more than 200 problems in Online Judge Platform. Few years back I found my passion in Javascript and that triggers me to a fulltime Web Developer. I am a Humor Loving person. Hope we can have fun together.</p>
                     <input type="submit" value="hire me" class="primary-btn">
                 </div>
             </div>
@@ -68,7 +72,7 @@
         <h1>Contact</h1>
         <div class="container">
             <div class="contact">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, enim unde. Voluptate repudiandae natus rerum quis ducimus blanditiis aperiam deserunt earum adipisci, qui nostrum mollitia, in excepturi voluptatum, eveniet dignissimos!</p>
+                <p>I know most of the people avoid filling up this boring form but beleive me this is the best way to start a discusson. The devs love to check their portfolio email box on a regular basis. So, hurry up and fill up this form and send your message. You don't need to express everything but be as detail as possible.</p>
                 <div class="message-area">
                     <form action="">
                         <label for="name">Name</label>
@@ -90,6 +94,18 @@
             </div>
         </div>
     </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("ul-pc");
+          var y = document.getElementById("bars");
+          var z = document.getElementById("times");
+          if (x.className === "ul-pc") {
+            x.className = "ul-mobile";
+          } else {
+            x.className = "ul-pc";
+          }
+        }
+        </script>
 </body>
 
 </html>
