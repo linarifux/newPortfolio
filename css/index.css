@@ -267,9 +267,12 @@ ul{
     }
   }
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 620px) {
     .container{
         width: 90%;
+    }
+    .navbar > ul{
+        display: none;
     }
     .my-hero{
         width: 100%;
@@ -349,5 +352,36 @@ ul{
     .contact-sec > h1{
         margin-bottom: 40px;
         font-size: 30px;
+    }
+
+    .contact-sec .contact{
+        display: block;
+    }
+    .contact-sec .contact > .message-area{
+        margin-left: 0;
+    }
+    .message-area{
+        margin: 0;
+    }
+    .message-area input{
+        width: 100%; 
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+    
+    .message-area textarea{
+        width: 100%; 
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+    .footer-sec{
+        margin-top: 60px;
+        background-color: #dcdde1;
+        text-align: center;
+    }
+    
+    .footer{
+        font-size: 15px;
+        font-weight: 300;
     }
   }
