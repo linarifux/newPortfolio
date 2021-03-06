@@ -308,7 +308,16 @@ ul{
     .navbar .fa-bars{
         display: block;
     }
-   
+    .navbar .fa-times{
+        display: none;
+    }
+
+    .navbar .open{
+        display: block;
+    }
+    .navbar .close{
+        display: none;
+    }
     
     .my-hero{
         width: 100%;

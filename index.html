@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="header">
+    <section class="header">
         <div class="container">
             <div class="navbar">
                 <img src="https://img.icons8.com/ios/72/code.png" alt="">
@@ -22,12 +22,13 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <i class="fas fa-bars" id="bars" onclick="myFunction()"></i>
-
+                <i class="fas fa-times" id="times" onclick="menuClose()"></i>
+                
 
             </div>
         </div>
-    </div>
-    <div class="hero-sec">
+    </section>
+    <section class="hero-sec">
         <div class="container">
             <div class="my-hero">
                 <p>I must say your wait is over. You have come to the right place at last. Web programming is my passion as well as profession. I use Javascript in the Backend. You must heard the name Node.js. I use React.js in the Front-end. So, lets get started.</p>
@@ -35,8 +36,8 @@
             <input type="submit" value="Learn More" class="primary-btn">
             </div>
         </div>
-    </div>
-    <div class="about-sec">
+    </section>
+    <section class="about-sec">
         <h1>About</h1>
         <div class="container">
             <div class="about">
@@ -48,8 +49,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="project-sec">
+    </section>
+    <section class="project-sec">
         <h1>Projects</h1>
         <div class="container">
             <div class="project">
@@ -67,8 +68,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="contact-sec">
+    </section>
+    <section class="contact-sec">
         <h1>Contact</h1>
         <div class="container">
             <div class="contact">
@@ -86,14 +87,14 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer-sec">
+    </section>
+    <section class="footer-sec">
         <div class="container">
             <div class="footer">
-                <p>All Rights Reserved by @Naimul Islam Arif</p>
+                <p>All Rights Reserved by Naimul Islam Arif</p>
             </div>
         </div>
-    </div>
+    </section>
     <script>
         function myFunction() {
           var x = document.getElementById("ul-pc");
@@ -101,9 +102,23 @@
           var z = document.getElementById("times");
           if (x.className === "ul-pc") {
             x.className = "ul-mobile";
+            y.className = "fas fa-bars close";
+            z.className = "fas fa-times open";
           } else {
             x.className = "ul-pc";
           }
+        }
+        function menuClose(){
+            var x = document.getElementById("ul-pc");
+            var timesIcon = document.getElementById("times");
+            var barsIcon = document.getElementById("bars");
+            timesIcon.className = "fas fa-times close";
+            barsIcon.className = "fas fa-bars open";
+            if(x.className === "ul-mobile"){
+                x.className = "ul-pc";
+            }else{
+                x.className = "ul-mobile";
+            }
         }
         </script>
 </body>
