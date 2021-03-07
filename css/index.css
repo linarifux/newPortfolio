@@ -344,6 +344,7 @@ ul{
     }
     .about{
         display: block; 
+        text-align: center;
     }
     .about-sec > h1{
         margin-bottom: 40px;
