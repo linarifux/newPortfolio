@@ -124,6 +124,9 @@ ul{
     font-weight: 300;
     font-size: 40px;
 }
+.about > .text > p{
+    font-size: 20px;
+}
 
 .about > .text > .primary-btn{
     margin-top: 30px;
@@ -368,7 +371,9 @@ ul{
     .about > .text > p, .about > .text > h2{
         text-align: left;
     }
-
+    .about > .text > p{
+        font-size: 18px;
+    }
     .project-sec > h1{
         margin-bottom: 40px;
         font-size: 30px;
@@ -408,6 +413,7 @@ ul{
     }
     .contact > p{
         margin-bottom: 50px;
+        font-size: 18px;
     }
     .message-area{
         margin: 0;
